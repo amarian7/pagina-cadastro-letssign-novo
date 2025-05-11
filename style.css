@@ -1,0 +1,158 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to bottom right, #00c6ff, #0072ff); 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.top-bar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.top-bar p {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 200px; 
+    height: auto;
+}
+
+.slogan {
+    font-size: 1.1em; 
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 1em;
+}
+
+.form-group input {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em; 
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 15px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    body {
+        align-items: flex-start; 
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .top-bar {
+        width: 95%;
+        max-width: none;
+        margin-bottom: 15px;
+        font-size: 1em;
+    }
+
+    .logo-container {
+        margin-bottom: 15px;
+    }
+
+    .logo {
+        width: 150px; 
+    }
+
+    .slogan {
+        font-size: 1em;
+    }
+
+    .form-container {
+        width: 95%;
+        max-width: none;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .form-container h2 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 0.9em;
+    }
+
+    .form-group input {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    .logo {
+        width: 250px;
+    }
+
+    .slogan {
+        font-size: 1.2em;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+}
